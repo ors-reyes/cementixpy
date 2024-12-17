@@ -1,0 +1,101 @@
+.svgPlano{
+    height: 90vh;
+    box-shadow: 0px 0px 50px black;
+    border-radius: 10px;
+    /* transform: scale(0.0) translateY(700px); */
+    /* animation: svgPlano 1s forwards; */
+}
+@keyframes svgPlano{0%{transform: scale(0.0) translateY(700px);}100%{transform: scale(1.0) translateY(0px);}}
+.fondo{
+    fill:url(#aspaNaranja);
+    transform: translateX(3602px);
+    animation: fondo 1s forwards 0.5s 
+
+    linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%)
+    
+    ;
+}
+@keyframes fondo{0%{transform: translateX(3602px);}100%{transform: translateX(0px);}}
+.line{
+    fill:url(#aspaNaranja2);
+    opacity: 0;
+    animation: line 0.5s forwards 1.5s 
+
+    linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%)
+    
+    ;
+}
+@keyframes line{0%{opacity: 0;}100%{opacity: 1;}}
+/* ******recuadro******* */
+.recuadro{fill: none;stroke: white;stroke-width: 10;stroke-linecap: round;stroke-linejoin: round;stroke-dasharray: 2400;stroke-dashoffset: 2400;
+    animation: recuadro 0.5s forwards 1.5s
+
+    linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%)
+    
+    ;
+    filter: drop-shadow(0 0 10px black);
+}
+@keyframes recuadro{0%{stroke-dashoffset:2400;}100%{stroke-dashoffset:0;}}
+/* *** RecuadroIn *** */
+/* R */
+.r01{fill:none;stroke:#fff;stroke-width:70;stroke-dasharray: 525;stroke-dashoffset: 525;
+    animation: r01 0.3s forwards 1.0s;}
+@keyframes r01{0%{stroke-dashoffset:525;}100%{stroke-dashoffset:0;}}
+.r02{fill:none;stroke:#fff;stroke-width:35;stroke-dasharray: 450;stroke-dashoffset: 450;
+    animation: r02 0.3s forwards 1.1s;}
+@keyframes r02{0%{stroke-dashoffset:450;}100%{stroke-dashoffset:0;}}
+.r03{fill:none;stroke:#fff;stroke-width:35;stroke-dasharray: 232;stroke-dashoffset: 232;
+    animation: r03 0.3s forwards 1.2s;}
+@keyframes r03{0%{stroke-dashoffset:232;}100%{stroke-dashoffset:0;}}
+/* E */
+.e01{fill:none;stroke:#fff;stroke-width:100;stroke-dasharray: 667;stroke-dashoffset: 667;
+    animation: e01 0.3s forwards 1.3s;}
+@keyframes e01{0%{stroke-dashoffset:667;}100%{stroke-dashoffset:0;}}
+.e02{fill:none;stroke:#fff;stroke-width:48;stroke-dasharray: 170;stroke-dashoffset: 170;
+    animation: e02 0.3s forwards 1.4s;}
+@keyframes e02{0%{stroke-dashoffset:170;}100%{stroke-dashoffset:0;}}
+/* N */
+.n01{fill:none;stroke:#fff;stroke-width:97;stroke-dasharray: 1160;stroke-dashoffset: 1160;
+    animation: n01 0.3s forwards 1.5s;}
+@keyframes n01{0%{stroke-dashoffset:1160;}100%{stroke-dashoffset:0;}}
+/* D */
+.d01{fill:none;stroke:#fff;stroke-width:80;stroke-dasharray: 430;stroke-dashoffset: 430;
+    animation: d01 0.3s forwards 1.6s;}
+@keyframes d01{0%{stroke-dashoffset:430;}100%{stroke-dashoffset:0;}}
+.d02{fill:none;stroke:#fff;stroke-width:60;stroke-dasharray: 500;stroke-dashoffset: 500;
+    animation: d02 0.3s forwards 1.7s;}
+@keyframes d02{0%{stroke-dashoffset:500;}100%{stroke-dashoffset:0;}}
+/* I */
+.i01{fill:none;stroke:#fff;stroke-width:90;stroke-dasharray: 442;stroke-dashoffset: 442;
+    animation: i01 0.3s forwards 1.8s;}
+@keyframes i01{0%{stroke-dashoffset:442;}100%{stroke-dashoffset:0;}}
+/* M */
+.m01{fill:none;stroke:#fff;stroke-width:97;stroke-dasharray: 1248;stroke-dashoffset: 1248;
+    animation: m01 0.3s forwards 1.9s;}
+@keyframes m01{0%{stroke-dashoffset:1248;}100%{stroke-dashoffset:0;}}
+/* I */
+.i02{fill:none;stroke:#fff;stroke-width:90;stroke-dasharray: 442;stroke-dashoffset: 442;
+    animation: i01 0.3s forwards 2.0s;}
+@keyframes i01{0%{stroke-dashoffset:442;}100%{stroke-dashoffset:0;}}
+/* E */
+.e03{fill:none;stroke:#fff;stroke-width:100;stroke-dasharray: 667;stroke-dashoffset: 667;
+    animation: e01 0.3s forwards 2.1s;}
+@keyframes e01{0%{stroke-dashoffset:667;}100%{stroke-dashoffset:0;}}
+.e04{fill:none;stroke:#fff;stroke-width:48;stroke-dasharray: 170;stroke-dashoffset: 170;
+    animation: e02 0.3s forwards 2.2s;}
+@keyframes e02{0%{stroke-dashoffset:170;}100%{stroke-dashoffset:0;}}
+/* N */
+.n02{fill:none;stroke:#fff;stroke-width:97;stroke-dasharray: 1160;stroke-dashoffset: 1160;
+    animation: n01 0.3s forwards 2.3s;}
+@keyframes n01{0%{stroke-dashoffset:1160;}100%{stroke-dashoffset:0;}}
+/* T */
+.t01{fill:none;stroke:#fff;stroke-width:90;stroke-dasharray: 442;stroke-dashoffset: 442;
+    animation: i01 0.3s forwards 2.4s;}
+@keyframes i01{0%{stroke-dashoffset:442;}100%{stroke-dashoffset:0;}}
+.t02{fill:none;stroke:#fff;stroke-width:43;stroke-dasharray: 227;stroke-dashoffset: 227;
+    animation: t02 0.3s forwards 2.5s;}
+@keyframes t02{0%{stroke-dashoffset:227;}100%{stroke-dashoffset:0;}}
+/* O */
+.o01{fill:none;stroke:#fff;stroke-width:97;stroke-dasharray: 884;stroke-dashoffset: 884;
+    animation: o01 0.3s forwards 2.6s;}
+@keyframes o01{0%{stroke-dashoffset:884;}100%{stroke-dashoffset:0;}}

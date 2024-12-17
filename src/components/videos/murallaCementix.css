@@ -1,0 +1,52 @@
+:root{
+    --murallaIni:16s;
+}
+
+.ladrilloLateral{fill-rule:evenodd;clip-rule:evenodd;fill:#E6E6E6;
+    stroke-width:5;stroke:rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+}
+.ladrilloSuperior{fill-rule:evenodd;clip-rule:evenodd;fill:#CCCCCC;
+    stroke-width:5;stroke:rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+}
+.ladrilloFrente{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;
+    stroke-width:5;stroke:rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+}
+
+.ladrilloA1,.ladrilloA2,.ladrilloA3,.ladrilloA4,.ladrilloA5,.ladrilloA6,.ladrilloA07,.ladrilloA08,.ladrilloA09,.ladrilloA10,.ladrilloA11,.ladrilloA12,.ladrilloA13{transform: translateY(-500px);opacity: 0;
+
+}
+.ladrilloA1{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 0.4s) ease-in;}
+.ladrilloA2{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 0.6s) ease-in;}
+.ladrilloA3{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 0.8s) ease-in;}
+.ladrilloA4{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 1s) ease-in;}
+.ladrilloA5{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 1.2s) ease-in;}
+.ladrilloA6{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 1.4s) ease-in;}
+@keyframes ladrilloCaida{0%{opacity: 0;transform: translateY(-500px);}100%{opacity: 1;transform: translateY(0px);}}
+.cementoA{fill-rule:evenodd;clip-rule:evenodd;fill:#f00;opacity: 1;}
+.lineaAs{fill:none;stroke:#B3B3B3;stroke-width:25;stroke-dasharray: 450;stroke-dashoffset: 450;}
+.line1A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 0.2s) ease-in;}
+.line2A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 0.4s) ease-in;}
+.line3A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 0.6s) ease-in;}
+.line4A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 0.8s) ease-in;}
+.line5A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 1s) ease-in;}
+.line6A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 1.2s) ease-in;}
+@keyframes lineaAs{0%{stroke-dashoffset:-450px;}100%{stroke-dashoffset:0px;}}
+
+.ladrilloA13{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 1.8s) ease-in;}
+.ladrilloA12{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 2s) ease-in;}
+.ladrilloA11{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 2.2s) ease-in;}
+.ladrilloA10{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 2.4s) ease-in;}
+.ladrilloA09{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 2.6s) ease-in;}
+.ladrilloA08{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 2.8s) ease-in;}
+.ladrilloA07{animation: ladrilloCaida 0.4s forwards calc(var(--murallaIni) + 3s) ease-in;}
+.lineaBs{fill:none;stroke-width:25;stroke:#B3B3B3;stroke-dasharray: 450;stroke-dashoffset: 450;}	
+.line13A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 1.8s) ease-in;}
+.line12A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 2s) ease-in;}
+.line11A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 2.2s) ease-in;}
+.line10A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 2.4s) ease-in;}
+.line09A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 2.6s) ease-in;}
+.line08A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 2.8s) ease-in;}
+.line07A{animation: lineaAs 0.4s forwards calc(var(--murallaIni) + 3s) ease-in;}

@@ -1,0 +1,74 @@
+:root{
+    --manposteriaIni: 11s;
+}
+.mamposteriaTXT{
+    fill: #ccc;
+    opacity: 0;
+    transform: translate(0px, 4200px) scale(0.6);
+    animation: mamposteriaTXT 0.5s forwards calc(var(--manposteriaIni) + 4.0s)
+    ;
+    transform-origin: 2850px 950px;
+}
+@keyframes mamposteriaTXT{
+    0%{
+        opacity: 0;
+        transform: translate(0px, 4200px) scale(0.6);
+    }100%{
+        opacity: 1;
+        transform: translate(-1300px, 4200px) scale(0.6);
+}}
+.mamposL{
+    fill: none;
+    stroke: #fff;
+    stroke-width: 40;
+    stroke-dashoffset: 380;
+    stroke-dasharray: 380;
+}
+@keyframes mamposL{0%{stroke-dashoffset:380;}100%{stroke-dashoffset:0;}}
+.l1{
+    transform-origin: 2685px 2685px;
+    animation: mamposL 0.5s forwards calc(var(--manposteriaIni) + 0.5s),
+                l01 1s forwards calc(var(--manposteriaIni) + 1.5s);
+}
+.l2{
+    transform-origin: 2685px 2931px;
+    animation: mamposL 0.5s forwards calc(var(--manposteriaIni) + 0.5s),
+                l02 1s forwards calc(var(--manposteriaIni) + 1.5s);
+}
+.l3{
+    transform-origin: 2923px 2931px;
+    animation: mamposL 0.5s forwards calc(var(--manposteriaIni) + 0.5s),
+                l03 1s forwards calc(var(--manposteriaIni) + 1.5s);
+}
+.l4{
+    transform-origin: 2923px 2685px;
+    animation: mamposL 0.5s forwards calc(var(--manposteriaIni) + 0.5s),
+                l04 1s forwards calc(var(--manposteriaIni) + 1.5s);
+}
+@keyframes l01{0%{transform: translate(0px);}100%{transform: translate(-900px, -700px);}}
+@keyframes l02{0%{transform: translate(0px);}100%{transform: translate(-900px, 700px);}}
+@keyframes l03{0%{transform: translate(0px);}100%{transform: translate(900px, 700px);}}
+@keyframes l04{0%{transform: translate(0px);}100%{transform: translate(900px, -700px);}}
+.mamposIcon{
+    transform-origin: 2800px 2800px;
+    fill: #fff;
+    transform: scale(0);
+    animation: mamposIcon 1s forwards calc(var(--manposteriaIni) + 2.0s);
+}
+@keyframes mamposIcon{0%{transform: scale(0);}100%{transform: scale(1);}}
+.mamposteria1{
+    transform-origin: 2800px 2800px;
+    animation: mamposteria1 1s forwards calc(var(--manposteriaIni) + 3.5s);
+}
+@keyframes mamposteria1{
+    0%{
+        transform: scale(1) translate(0px);opacity: 1;
+    }50%{transform: scale(0) translate(0px);opacity: 0;
+    }70%{transform: scale(0.3) translate(-7500px, 7500px);opacity: 0;
+    }100%{
+        transform: scale(0.3) translate(-7500px, 7500px);opacity: 1;
+}}
+circle{
+    cx:2850;
+    cy:950
+}

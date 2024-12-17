@@ -1,0 +1,72 @@
+.metrosA{
+    fill: none;
+    stroke: #CCCCCC;
+    stroke-width: 5;
+}
+.metrosAs{
+    transform: translateY(1382px);
+    animation: metrosAs 1s forwards 20s;
+}
+@keyframes metrosAs{0%{
+    transform: translateY(1382px);
+}100%{
+    transform: translateY(0px);
+}}
+.cintaMetrica{
+    fill: #CCCCCC;
+    transform: translateY(0px);
+    opacity: 0;
+    animation: cintaMetrica 1s forwards 19.8s;
+}
+.cintaPunta{
+    fill: #CCCCCC;
+    opacity: 0;
+    animation: cintaPunta 0.1s forwards 19.8s;
+}
+@keyframes cintaPunta{0%{opacity:0;}100%{opacity:1;}}
+@keyframes cintaMetrica{
+    0%{
+        opacity:0;
+        transform: translateY(0px);
+    }100%{
+        opacity:1;
+        transform: translateY(-1382px);
+}}
+.mtrsCuadradosA{
+    fill: #CCCCCC;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: mtrsCuadradosA 0.5s forwards 21s;
+}
+@keyframes mtrsCuadradosA{
+    0%{
+        opacity:0;
+        transform: translateY(-50px);
+    }100%{
+        opacity:1;
+        transform: translateY(0px);
+}}
+.mtrsLine{
+    fill: none;
+    stroke: #CCCCCC;
+    stroke-width: 5;
+    stroke-dasharray: 70;
+    stroke-dashoffset: 70;
+    animation: mtrsLine 1s forwards 21.5s;
+}
+@keyframes mtrsLine{0%{stroke-dashoffset:70;}100%{stroke-dashoffset:0px;}}
+.mtrsLine2{
+    fill: none;
+    stroke: #CCCCCC;
+    stroke-width: 5;
+    stroke-dasharray: 1325;
+    stroke-dashoffset: 1325;
+    animation: mtrsLine2 0.5s forwards 22s;
+}
+@keyframes mtrsLine2{0%{stroke-dashoffset:1325;}100%{stroke-dashoffset:0px;}}
+.mtrsB{
+    fill: #CCCCCC;
+    opacity: 0;
+    animation: mtrsB 0.5s forwards 22.5s;
+}
+@keyframes mtrsB{0%{opacity:0;}100%{opacity:1;}}

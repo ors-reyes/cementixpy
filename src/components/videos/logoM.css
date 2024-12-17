@@ -1,0 +1,86 @@
+.logoContenedor{
+    transform-origin: 2800px 2800px;
+    transform: translate(0px, 0px) scale(1);
+    /* animation: logoContenedor 0.1s forwards 6s
+    
+    ; */
+}
+.margenLogo{
+    fill: #FFFFFF;
+    transform: translateY(2650px);
+    animation: margenLogoColor 1s forwards 2s 
+    cubic-bezier(0.65, 0.05, 0.36, 1)
+    , logoFull 1s forwards reverse 5s
+    ;
+}
+.margenLogo2{
+    fill: none;
+    stroke: #acacac;
+    stroke-width: 20;
+    stroke-dasharray: 10050;
+    stroke-dashoffset: 10050;
+    animation: margenLogo 0.5s forwards 1.5s ease-in
+    , logoFull 1s forwards reverse 5s
+    ;
+}
+@keyframes margenLogoColor{
+    0%{
+        transform: translateY(2650px);
+    }100%{
+        transform: translateY(0px);
+    }}
+@keyframes margenLogo{
+    0%{stroke-dashoffset:10050;
+    }100%{
+        stroke-dashoffset:0;
+    }}
+.fndLadrillo{fill:#000000;}
+.fndTecho{fill:#000000;}
+.logoTXT{fill:#000000;}
+.logoRecuadro{fill:#000000;}
+.red{fill:#FF0000;}
+.blue{fill:#0000FF;}
+.white{fill:#FFFFFF;}
+@keyframes logoContenedor{
+    0%{
+        transform: translate(0px, 0px) scale(0);opacity: 0;
+    }50%{transform: translate(2340px, -2280px) scale(0);opacity: 0;
+    }100%{
+        transform: translate(2340px, -2280px) scale(0.35);opacity: 1;
+        filter: drop-shadow(0px 0px 35px #FFF);
+}}
+.logoFull{
+    transform-origin: 2800px 2800px;
+    opacity: 0;
+    animation: logoFull 1s forwards 2.5s
+    , logoFull 1s forwards reverse 5s
+    , logoContenedor 0.5s forwards 6s
+    ;
+}
+@keyframes logoFull{0%{opacity:0;}100%{opacity:1;}}
+
+.trianguloLogo{
+    fill: rgba(255, 255, 255, 0.05);
+    animation: trianguloLogo 1s forwards 4s 
+    linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%)
+    ;
+    transform: translate(1800px, 0px);
+}
+.triopa{
+    fill: rgba(255, 255, 255, 0.05);
+    transform: translate(1800px, 0px);
+    animation: trianguloLogo2 0.8s forwards 4.5s
+    linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%)
+    ;
+}
+.triopa3{
+    fill: rgba(255, 255, 255, 0.05);
+    transform: translate(1800px, 0px);
+    animation: trianguloLogo3 0.5s forwards 5s
+    linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%)
+    ;
+}
+@keyframes trianguloLogo{0%{transform: translate(1800px, 0px);}100%{transform: translate(0px, 0px);}}
+@keyframes trianguloLogo2{0%{transform: translate(1800px, 0px);}100%{transform: translate(50px, 0px);}}
+@keyframes trianguloLogo3{0%{transform: translate(1800px, 0px);}100%{transform: translate(100px, 0px);}}
+

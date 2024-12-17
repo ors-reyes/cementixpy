@@ -1,0 +1,71 @@
+:root{
+    --mezclaBlancaTXTIni:6.5s;
+}
+.mezclaBlancaTXT{
+    fill: #CCCCCC;
+    transform: translateX(-2500px);
+    animation: mezclaBlancaTXT 0.75s forwards 
+    cubic-bezier(0.65, 0.05, 0.36, 1) 
+    calc(var(--mezclaBlancaTXTIni) + 0.0s)
+    ;
+}
+@keyframes mezclaBlancaTXT{
+    0%{
+        transform: translateX(-2500px);
+    }100%{
+        transform: translateX(0px);
+}}
+.mezclaBlancaSombra{
+    /* fill: red; */
+    fill: #FFFFFF;
+    opacity: 0;
+    filter: drop-shadow(0 0 25px black);
+    animation: mezclaBlancaSombra 1s forwards 
+    cubic-bezier(0.65, 0.05, 0.36, 1) 
+    calc(var(--mezclaBlancaTXTIni) + 0.5s)
+    ;
+}
+@keyframes mezclaBlancaSombra{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+}}
+.mezclaBlancaTxtDesc{
+    fill: #CCCCCC;
+    transform: translateX(-3900px);
+    animation: mezclaBlancaTxtDesc 0.75s forwards 
+    cubic-bezier(0.65, 0.05, 0.36, 1) 
+    calc(var(--mezclaBlancaTXTIni) + 1s)
+    ;
+}
+@keyframes mezclaBlancaTxtDesc{
+    0%{
+        transform: translateX(-3900px);
+    }100%{
+        transform: translateX(0px);
+}}
+.mezclaBlancaTxtEjemplo{
+    fill: #CCCCCC;
+    transform: translateX(-1040px);
+    animation: mezclaBlancaTxtEjemplo 0.5s forwards 
+    cubic-bezier(0.65, 0.05, 0.36, 1) 
+    calc(var(--mezclaBlancaTXTIni) + 3s),
+    mezclaBlancaTxtEjemplo2 1s forwards 
+    cubic-bezier(0.65, 0.05, 0.36, 1) 
+    calc(var(--mezclaBlancaTXTIni) + 4.5s)
+    ;
+}
+@keyframes mezclaBlancaTxtEjemplo{
+    0%{
+        transform: translateX(-1040px);
+    }100%{
+        transform: translateX(0px);
+}}
+@keyframes mezclaBlancaTxtEjemplo2{
+    0%{
+        transform: translateX(0px);
+    }100%{
+        transform: translateX(1040px);
+        opacity: 0;
+}}

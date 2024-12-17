@@ -1,0 +1,40 @@
+.muralla{
+    width: 100vw;
+    height: 100vh;
+    display: flex;justify-content: center;align-items: center;
+}
+.fondoIniM{
+    max-width: 100vh;
+}
+.lineM{
+    fill: url(#fondoM);
+    /* filter: drop-shadow(0 0 5px gray); */
+    width: 0px;
+    animation: lineM 1.5s forwards 0.5s;
+    opacity: 0.5;
+}
+.lineMH{
+    fill: url(#fondoM);
+    /* filter: drop-shadow(0 0 5px gray); */
+    height: 0px;
+    animation: lineMH 1.5s forwards 0.5s;
+    opacity: 0.5;
+}
+@keyframes lineMH{0%{
+    height: 0px;
+}100%{
+    height: 5600px;
+}}
+@keyframes lineM{0%{
+    width: 0px;
+}100%{
+    width: 5600px;
+}}
+/* .rectMove{
+    animation: rectMove 1s forwards 0.5s;
+}
+@keyframes rectMove{0%{
+    transform: translateX(0px);
+}100%{
+    transform: translateX(1000px);
+}} */
